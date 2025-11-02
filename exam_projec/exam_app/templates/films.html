@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Films{% endblock %}
+
+{% block content %}
+<h2>🎬 ფილმების სია</h2>
+
+<ul>
+    {% for name, rating in filme %}
+        <li>
+            <strong>{{ name }} ------------------- რეიტინგი: {{ rating }}/10</strong>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
